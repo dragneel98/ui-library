@@ -1,0 +1,68 @@
+:root{
+    --background-color: #f8f8f8;
+    /* --background-color: black; */
+    --border-bottom-color: #ccc;
+  }
+  @font-face {
+    font-family: "lettera mono";
+    src: url("../../../src/assets/fonts/fuentes retro futuristas/Lettera\ Mono\ LL\ Cond\ Light-normal-400-100.otf") format('opentype');
+}
+  
+/* Resetear estilos predeterminados del navegador */
+body, h1, h2, ul, li, p {
+    padding: 0;
+    text-wrap:pretty;
+    font-family: "lettera mono";
+  }
+
+  /* Estilo general del acordeón */
+  details {
+    width: 100%;
+    max-height: 40px;
+    max-width: 400px; /* Ajusta el ancho según tus preferencias */
+    margin: 20px auto; /* Centrar el acordeón en la página */
+    border: 1px solid var(--border-bottom-color);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: "lettera mono";
+  }
+  
+ /* Estilo del encabezado del acordeón */
+summary {
+    background-color: var(--background-color);
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;  
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-bottom-color);
+  }
+  
+  /* Icono de flecha para indicar el estado del acordeón */
+  summary::before {
+    /* content: '▶'; */
+    content: "〉";
+    font-size: 10px;
+    margin-right: 8px;
+    transition: transform 0.5s ease-out;
+  }
+  /* Estilo del contenido del acordeón */
+  details > div {
+    padding: 10px;
+    background-color: var(--background-color);
+    border-top: 1px solid #ccc;
+  }
+  details[open]{
+    max-height: 400px;
+    transition: max-height 0.6s ease-in-out;
+  }
+  /* Cambiar el estilo de la flecha cuando el acordeón está abierto */
+  details[open] summary::before {
+    transform: rotate(90deg); /* Rotar la flecha hacia abajo cuando está abierto */
+  }
+  details[open] summary {
+    justify-content: space-between;
+    /* falta animacion para el movimiento del title */
+  }
+ 

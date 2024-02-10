@@ -1,0 +1,26 @@
+:root{
+  --background-color: #f8f8f8;
+  --background-color: black;
+  --border-bottom-color: #ccc;
+  --red: #C8102E;
+}
+
+@font-face {
+  font-family:"lettera mono" ;
+  src: url("./assets/fonts/fuentes retro futuristas/Lettera\ Mono\ LL\ Cond\ Light-normal-400-100.otf"),  
+}
+
+@font-face {
+  font-family: "dotmbold";
+  src: url("./assets/fonts/fuentes retro futuristas/DOTMBold.TTF");
+}
+
+@font-face {
+  font-family: "ndot";
+  src: url("./assets/fonts/fuentes retro futuristas/Ndot-normal-400-100.otf");
+}
+
+@font-face {
+  font-family: "ntype";
+  src: url("./assets/fonts/fuentes retro futuristas/NType\ 82-normal-400-100.otf");
+}

@@ -1,0 +1,30 @@
+:root{
+    --background-color: #f8f8f8;
+    --border-bottom-color: #ccc;
+}
+
+.select-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 250px;
+    height: 50px;
+}
+
+.select-box{
+    border: none;
+    appearance: none;
+    padding: 0 30px 0 15px;
+    width: 100%;
+    font-size: 20px;
+    background-color: var(--background-color);
+}
+
+.option:hover{
+    background-color: var(--border-bottom-color);
+}
+
+#miSelect:hover option:hover {
+    background-color: lightblue; /* Cambia el color de fondo al pasar el mouse sobre una opción */
+  }
+  
